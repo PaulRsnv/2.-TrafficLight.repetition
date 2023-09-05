@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E67592D32AA7775500597BF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67592D22AA7775500597BF1 /* AppDelegate.swift */; };
-		E67592D52AA7775500597BF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67592D42AA7775500597BF1 /* SceneDelegate.swift */; };
 		E67592D72AA7775500597BF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67592D62AA7775500597BF1 /* ViewController.swift */; };
 		E67592DA2AA7775500597BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67592D82AA7775500597BF1 /* Main.storyboard */; };
 		E67592DC2AA7775700597BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67592DB2AA7775700597BF1 /* Assets.xcassets */; };
 		E67592DF2AA7775700597BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67592DD2AA7775700597BF1 /* LaunchScreen.storyboard */; };
+		E67592E72AA7899600597BF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67592E62AA7899600597BF1 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E67592CF2AA7775500597BF1 /* 2. TrafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2. TrafficLight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67592D22AA7775500597BF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E67592D42AA7775500597BF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E67592D62AA7775500597BF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E67592D92AA7775500597BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E67592DB2AA7775700597BF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E67592DE2AA7775700597BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E67592E02AA7775700597BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67592E62AA7899600597BF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				E67592D22AA7775500597BF1 /* AppDelegate.swift */,
-				E67592D42AA7775500597BF1 /* SceneDelegate.swift */,
+				E67592E62AA7899600597BF1 /* SceneDelegate.swift */,
 				E67592D62AA7775500597BF1 /* ViewController.swift */,
 				E67592D82AA7775500597BF1 /* Main.storyboard */,
 				E67592DB2AA7775700597BF1 /* Assets.xcassets */,
@@ -140,7 +140,7 @@
 			files = (
 				E67592D72AA7775500597BF1 /* ViewController.swift in Sources */,
 				E67592D32AA7775500597BF1 /* AppDelegate.swift in Sources */,
-				E67592D52AA7775500597BF1 /* SceneDelegate.swift in Sources */,
+				E67592E72AA7899600597BF1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +293,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +303,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "CurlIcAshotovich.---TrafficLight";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +325,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +335,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "CurlIcAshotovich.---TrafficLight";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

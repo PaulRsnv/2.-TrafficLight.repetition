@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  2. TrafficLight
+//  1. Squares
 //
 //  Created by Oxyenniu on 05.09.2023.
 //
